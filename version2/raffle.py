@@ -27,5 +27,10 @@ def run_raffle():
     pick_winner(customers)
 
 
-if __name__ == "__main__":       # only do the following if the program is run directly (i.e. python3 raffle.py versus running some other program with run_raffle() being an imported function)
-    run_raffle()                 # read customers.txt, organize data and store customers in customer list, then pick winner  
+if __name__ == "__main__":       # only do the following if the program is run directly (i.e. python3 raffle.py); don't evaulate upon import
+    run_raffle()                 # read customers.txt, organize data and store customers in customer list, then pick winner
+
+    #if this line30 was not in place and we just called run_raffle(), and we were to import raffle
+    #in the terminal, the terminal will READ and EVALUATE the file and display output
+    #with the if...statement, when we import raffle in terminal, it will import without reading file
+    #no output is given until raffly.py is ran directly via python3 raffle.py

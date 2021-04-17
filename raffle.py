@@ -57,5 +57,5 @@ def run_raffle():
     pick_winner(customers)
 
 
-if __name__ == "__main__":       # only do the following if the program is run directly (i.e. python3 raffle.py versus running some other program with run_raffle() being an imported function)
+if __name__ == "__main__":       # only do the following if the program is run directly (i.e. python3 raffle.py versus evaluating an imported function)
     run_raffle()                 # read customers.txt, organize data and store customers in customer list, then pick winner  
